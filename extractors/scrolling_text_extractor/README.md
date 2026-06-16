@@ -4,7 +4,7 @@
 
 `scrolling_text_extractor` · `v1` · **🎬 Video** · 30 cr/minute
 
-📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/scrolling-text)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/scrolling-text?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=scrolling_text_extractor)** · ▶️ **[Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=scrolling_text_extractor)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=scrolling_text_extractor)**
 
 Extracts scrolling/marquee text from video using phase-correlation band detection, panoramic stitching, and VLM OCR.
 
@@ -54,7 +54,7 @@ Detects text that scrolls across the screen — horizontally (R-to-L / L-to-R ti
 
 ## Quickstart
 
-**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/scrolling-text) for a full walkthrough.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=scrolling_text_extractor), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=scrolling_text_extractor) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/scrolling-text?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=scrolling_text_extractor) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -78,4 +78,4 @@ client.collections.create(
 
 <sub>Topics: video ocr api, scrolling text detection, marquee ocr, news ticker ocr, vlm ocr</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/scrolling-text) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/scrolling-text?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=scrolling_text_extractor) · [Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=scrolling_text_extractor) · [Get an API key](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=scrolling_text_extractor)</sub>

@@ -4,7 +4,7 @@
 
 `web_scraper` · `v1` · **📝 Text** · 5 cr/page, 1 cr/extraction, 2 cr/image
 
-📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/web-scraper)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/web-scraper?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=web_scraper)** · ▶️ **[Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=web_scraper)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=web_scraper)**
 
 Crawls websites and extracts content with multimodal embeddings. Supports documentation sites, job boards, news sites, and SPAs.
 
@@ -98,7 +98,7 @@ Crawls websites and extracts content with multimodal embeddings. Supports docume
 
 ## Quickstart
 
-**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/web-scraper) for a full walkthrough.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=web_scraper), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=web_scraper) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/web-scraper?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=web_scraper) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -122,4 +122,4 @@ client.collections.create(
 
 <sub>Topics: web scraper api, website embeddings, crawl and embed, rag website, documentation search</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/web-scraper) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/web-scraper?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=web_scraper) · [Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=web_scraper) · [Get an API key](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=web_scraper)</sub>

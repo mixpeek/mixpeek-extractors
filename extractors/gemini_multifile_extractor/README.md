@@ -4,7 +4,7 @@
 
 `gemini_multifile_extractor` · `v1` · **🖼️ Image · 🎬 Video · 🔊 Audio · 📄 PDF · 📝 Text** · 10 cr/image
 
-📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/gemini-multifile)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/gemini-multifile?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=gemini_multifile_extractor)** · ▶️ **[Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=gemini_multifile_extractor)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=gemini_multifile_extractor)**
 
 **Multi-file object embedding using Gemini Embedding 2** (gemini-embedding-2, 3072-d).
 
@@ -54,7 +54,7 @@ Embeds ALL files of an object (images, PDFs, video, audio, text) into a SINGLE u
 
 ## Quickstart
 
-**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/gemini-multifile) for a full walkthrough.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=gemini_multifile_extractor), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=gemini_multifile_extractor) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/gemini-multifile?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=gemini_multifile_extractor) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -78,4 +78,4 @@ client.collections.create(
 
 <sub>Topics: multi file embeddings, gemini embedding, object embeddings, document embeddings api</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/gemini-multifile) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/gemini-multifile?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=gemini_multifile_extractor) · [Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=gemini_multifile_extractor) · [Get an API key](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=gemini_multifile_extractor)</sub>

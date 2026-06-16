@@ -4,7 +4,7 @@
 
 `multimodal_extractor` · `v2` · **🎬 Video · 🖼️ Image · 🔊 Audio · 📝 Text** · 50 cr/minute, 5 cr/image, 2 cr/1k_tokens
 
-📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/multimodal)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/multimodal?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=multimodal_extractor)** · ▶️ **[Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=multimodal_extractor)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=multimodal_extractor)**
 
 **Multimodal extractor v2** using **Gemini Embedding 2** (3072D) for unified embeddings.
 
@@ -96,7 +96,7 @@ Gemini Embedding 2 is Google's first natively multimodal embedding model, mappin
 
 ## Quickstart
 
-**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/multimodal) for a full walkthrough.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=multimodal_extractor), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=multimodal_extractor) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/multimodal?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=multimodal_extractor) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -120,4 +120,4 @@ client.collections.create(
 
 <sub>Topics: video embeddings api, multimodal embeddings, video scene detection, video search api, whisper transcription, gemini embedding 2</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/multimodal) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/multimodal?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=multimodal_extractor) · [Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=multimodal_extractor) · [Get an API key](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=multimodal_extractor)</sub>

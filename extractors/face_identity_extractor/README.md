@@ -4,7 +4,7 @@
 
 `face_identity_extractor` · `v1` · **🖼️ Image · 🎬 Video · 📄 PDF** · 5 cr/image, 5 cr/face
 
-📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/face-identity)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/face-identity?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=face_identity_extractor)** · ▶️ **[Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=face_identity_extractor)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=face_identity_extractor)**
 
 Production-grade face recognition using state-of-the-art models (SCRFD + ArcFace). Detects faces, aligns to canonical template, generates 512-dimensional embeddings with 99.8%+ verification accuracy (LFW benchmark). Supports images, videos, and PDFs.
 
@@ -99,7 +99,7 @@ Production-grade face recognition using state-of-the-art models (SCRFD + ArcFace
 
 ## Quickstart
 
-**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/face-identity) for a full walkthrough.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=face_identity_extractor), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=face_identity_extractor) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/face-identity?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=face_identity_extractor) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -123,4 +123,4 @@ client.collections.create(
 
 <sub>Topics: face recognition api, arcface embeddings, face detection, scrfd, face search, person reidentification</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/face-identity) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/face-identity?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=face_identity_extractor) · [Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=face_identity_extractor) · [Get an API key](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=face_identity_extractor)</sub>

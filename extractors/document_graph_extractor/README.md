@@ -4,7 +4,7 @@
 
 `document_graph_extractor` · `v1` · **📄 PDF** · 5 cr/page, 20 cr/extraction
 
-📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/document-graph)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/document-graph?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=document_graph_extractor)** · ▶️ **[Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=document_graph_extractor)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=document_graph_extractor)**
 
 Extracts spatial blocks from PDFs with layout classification and confidence scoring. Decomposes documents into paragraphs, tables, forms, lists, headers, footers, figures, and handwritten content. Includes optional VLM correction for low-confidence blocks. Best for archival documents, scanned files, and documents requiring spatial understanding.
 
@@ -87,7 +87,7 @@ Extracts spatial blocks from PDFs with layout classification and confidence scor
 
 ## Quickstart
 
-**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/document-graph) for a full walkthrough.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=document_graph_extractor), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=document_graph_extractor) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/document-graph?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=document_graph_extractor) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -111,4 +111,4 @@ client.collections.create(
 
 <sub>Topics: pdf layout extraction, document understanding api, table extraction, document graph, layout analysis</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/document-graph) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/document-graph?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=document_graph_extractor) · [Try in Studio](https://studio.mixpeek.com?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=document_graph_extractor) · [Get an API key](https://studio.mixpeek.com/namespaces/create?utm_source=github&utm_medium=cookbook&utm_campaign=extractors&utm_content=document_graph_extractor)</sub>
