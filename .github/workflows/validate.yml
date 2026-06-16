@@ -1,0 +1,50 @@
+name: validate
+
+# The catalog is generated in the Mixpeek monorepo (that job owns drift). This
+# public-repo CI is a lightweight safety net: it proves every embedded Python
+# snippet compiles and every internal link resolves, so a bad publish can't ship
+# broken copy-paste examples.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Python snippets compile
+        run: |
+          python3 - <<'PY'
+          import ast, pathlib, re, sys
+          fails = 0
+          for md in pathlib.Path(".").rglob("README.md"):
+              text = md.read_text()
+              for block in re.findall(r"```python\n(.*?)```", text, re.S):
+                  try:
+                      ast.parse(block)
+                  except SyntaxError as e:
+                      print(f"::error file={md}::python snippet does not parse: {e}")
+                      fails += 1
+          print("python snippets OK" if not fails else f"{fails} bad snippet(s)")
+          sys.exit(1 if fails else 0)
+          PY
+
+      - name: Internal links resolve
+        run: |
+          python3 - <<'PY'
+          import pathlib, re, sys
+          root = pathlib.Path(".")
+          fails = 0
+          for md in root.rglob("*.md"):
+              for target in re.findall(r"\]\((?!https?://)([^)#]+)", md.read_text()):
+                  resolved = (md.parent / target).resolve()
+                  if not resolved.exists():
+                      print(f"::error file={md}::broken link -> {target}")
+                      fails += 1
+          print("links OK" if not fails else f"{fails} broken link(s)")
+          sys.exit(1 if fails else 0)
+          PY
