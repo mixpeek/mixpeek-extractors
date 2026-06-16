@@ -4,23 +4,25 @@
 
 **Extractors** are Mixpeek's processing pipelines: point one at your objects (video, images, audio, PDFs, text, or whole multi-file bundles) and it produces **searchable vector embeddings** plus structured metadata — video scene detection, Whisper transcription, SigLIP/Gemini/E5 embeddings, OCR, face identity, audio fingerprinting, document layout graphs, and more. This repo is the runnable catalog.
 
-> 🔁 **Auto-generated from the live registry** — every parameter, input field, embedding model and credit cost below is rendered straight from the API's extractor definitions, so it never drifts from production. [Get an API key →](https://mixpeek.com)
+> 🔁 **Auto-generated from the live registry** — every parameter, input field, embedding model and credit cost below is rendered straight from the API's extractor definitions, so it never drifts from production.
+
+**▶️ [Try any extractor in Mixpeek Studio](https://studio.mixpeek.com)** — create a collection, upload your data, and search in the browser. Or **[get an API key →](https://studio.mixpeek.com/namespaces/create)** and copy the quickstart from any extractor page below. Full docs: **[mixpeek.com/docs](https://mixpeek.com/docs)**.
 
 ## Catalog
 
-| Extractor | What it does | Modalities | Embeddings | Credits |
-|---|---|---|---|---|
-| **[Audio Fingerprinting (CLAP)](extractors/audio_fingerprint_extractor/README.md)** | 512-D audio embeddings with CLAP — content-based audio search and matching from files or video tracks. | 🔊 Audio · 🎬 Video | `laion__clap_htsat_tiny` | 3 cr/extraction |
-| **[Document Layout Graph](extractors/document_graph_extractor/README.md)** | Decompose PDFs into spatial blocks — paragraphs, tables, forms, headers — with layout classification & confidence. | 📄 PDF | `intfloat__multilingual_e5_large_instruct` | 5 cr/page, 20 cr/extraction |
-| **[Face Identity (SCRFD + ArcFace)](extractors/face_identity_extractor/README.md)** | Production face recognition — detect, align, and embed faces to 512-D ArcFace vectors across image, video & PDF. | 🖼️ Image · 🎬 Video · 📄 PDF | `insightface__arcface` | 5 cr/image, 5 cr/face |
-| **[Image Embeddings (SigLIP)](extractors/image_extractor/README.md)** | Dense 768-D image embeddings with Google SigLIP — text-to-image search in one contrastive space. | 🖼️ Image · 📄 PDF | `google_siglip_base_v1` | 2 cr/image |
-| **[Multi-File Object Embeddings (Gemini)](extractors/gemini_multifile_extractor/README.md)** | Embed ALL files of an object (images, PDFs, video, audio, text) into one 3072-D Gemini vector. | 🖼️ Image · 🎬 Video · 🔊 Audio · 📄 PDF · 📝 Text | `gemini-embedding-2` | 10 cr/image |
-| **[Multimodal Video/Audio/Image (Vertex v1 · Gemini v2)](extractors/multimodal_extractor/README.md)** | Unified embeddings for video, audio, image & text — FFmpeg scene/silence chunking, Whisper transcription, thumbnails. | 🎬 Video · 🖼️ Image · 🔊 Audio · 📝 Text | `gemini-embedding-2` | 50 cr/minute, 5 cr/image, 2 cr/1k_tokens |
-| **[Universal All-in-One (Gemini)](extractors/universal_extractor/README.md)** | One extractor for image, video, audio & documents — auto-detects modality and applies the right pipeline. | 🖼️ Image · 🎬 Video · 🔊 Audio · 📄 PDF · 📝 Text | `gemini-embedding-2` | 15 cr/image |
-| **[Text Embeddings (E5-Large)](extractors/text_extractor/README.md)** | Multilingual dense text embeddings with E5-Large — semantic search & RAG out of the box. | 📝 Text | `multilingual_e5_large_instruct_v1` | 1 cr/1k_tokens |
-| **[Passthrough (Storage Only)](extractors/passthrough_extractor/README.md)** | Store and canonicalize objects with zero ML — metadata-only ingestion. | 📝 Text · 🖼️ Image · 🎬 Video · 🔊 Audio · 📄 PDF | — | 1 cr/extraction |
-| **[Scrolling/Marquee Text OCR](extractors/scrolling_text_extractor/README.md)** | Reads scrolling video text via phase-correlation band detection, panoramic stitching, and VLM OCR. | 🎬 Video | — | 30 cr/minute |
-| **[Web Scraper + Multimodal Embeddings](extractors/web_scraper/README.md)** | Crawl sites (docs, job boards, news, SPAs) and extract text, code & image embeddings in one pass. | 📝 Text | `intfloat__multilingual_e5_large_instruct` | 5 cr/page, 1 cr/extraction, 2 cr/image |
+| Extractor | What it does | Modalities | Embeddings | Credits | Docs |
+|---|---|---|---|---|---|
+| **[Audio Fingerprinting (CLAP)](extractors/audio_fingerprint_extractor/README.md)** | 512-D audio embeddings with CLAP — content-based audio search and matching from files or video tracks. | 🔊 Audio · 🎬 Video | `laion__clap_htsat_tiny` | 3 cr/extraction | [📖](https://mixpeek.com/docs/processing/extractors/audio-fingerprint) |
+| **[Document Layout Graph](extractors/document_graph_extractor/README.md)** | Decompose PDFs into spatial blocks — paragraphs, tables, forms, headers — with layout classification & confidence. | 📄 PDF | `intfloat__multilingual_e5_large_instruct` | 5 cr/page, 20 cr/extraction | [📖](https://mixpeek.com/docs/processing/extractors/document-graph) |
+| **[Face Identity (SCRFD + ArcFace)](extractors/face_identity_extractor/README.md)** | Production face recognition — detect, align, and embed faces to 512-D ArcFace vectors across image, video & PDF. | 🖼️ Image · 🎬 Video · 📄 PDF | `insightface__arcface` | 5 cr/image, 5 cr/face | [📖](https://mixpeek.com/docs/processing/extractors/face-identity) |
+| **[Image Embeddings (SigLIP)](extractors/image_extractor/README.md)** | Dense 768-D image embeddings with Google SigLIP — text-to-image search in one contrastive space. | 🖼️ Image · 📄 PDF | `google_siglip_base_v1` | 2 cr/image | [📖](https://mixpeek.com/docs/processing/extractors/image) |
+| **[Multi-File Object Embeddings (Gemini)](extractors/gemini_multifile_extractor/README.md)** | Embed ALL files of an object (images, PDFs, video, audio, text) into one 3072-D Gemini vector. | 🖼️ Image · 🎬 Video · 🔊 Audio · 📄 PDF · 📝 Text | `gemini-embedding-2` | 10 cr/image | [📖](https://mixpeek.com/docs/processing/extractors/gemini-multifile) |
+| **[Multimodal Video/Audio/Image (Vertex v1 · Gemini v2)](extractors/multimodal_extractor/README.md)** | Unified embeddings for video, audio, image & text — FFmpeg scene/silence chunking, Whisper transcription, thumbnails. | 🎬 Video · 🖼️ Image · 🔊 Audio · 📝 Text | `gemini-embedding-2` | 50 cr/minute, 5 cr/image, 2 cr/1k_tokens | [📖](https://mixpeek.com/docs/processing/extractors/multimodal) |
+| **[Universal All-in-One (Gemini)](extractors/universal_extractor/README.md)** | One extractor for image, video, audio & documents — auto-detects modality and applies the right pipeline. | 🖼️ Image · 🎬 Video · 🔊 Audio · 📄 PDF · 📝 Text | `gemini-embedding-2` | 15 cr/image | [📖](https://mixpeek.com/docs/processing/extractors/universal) |
+| **[Text Embeddings (E5-Large)](extractors/text_extractor/README.md)** | Multilingual dense text embeddings with E5-Large — semantic search & RAG out of the box. | 📝 Text | `multilingual_e5_large_instruct_v1` | 1 cr/1k_tokens | [📖](https://mixpeek.com/docs/processing/extractors/text) |
+| **[Passthrough (Storage Only)](extractors/passthrough_extractor/README.md)** | Store and canonicalize objects with zero ML — metadata-only ingestion. | 📝 Text · 🖼️ Image · 🎬 Video · 🔊 Audio · 📄 PDF | — | 1 cr/extraction | [📖](https://mixpeek.com/docs/processing/extractors/passthrough) |
+| **[Scrolling/Marquee Text OCR](extractors/scrolling_text_extractor/README.md)** | Reads scrolling video text via phase-correlation band detection, panoramic stitching, and VLM OCR. | 🎬 Video | — | 30 cr/minute | [📖](https://mixpeek.com/docs/processing/extractors/scrolling-text) |
+| **[Web Scraper + Multimodal Embeddings](extractors/web_scraper/README.md)** | Crawl sites (docs, job boards, news, SPAs) and extract text, code & image embeddings in one pass. | 📝 Text | `intfloat__multilingual_e5_large_instruct` | 5 cr/page, 1 cr/extraction, 2 cr/image | [📖](https://mixpeek.com/docs/processing/extractors/web-scraper) |
 
 ## Browse by use case
 

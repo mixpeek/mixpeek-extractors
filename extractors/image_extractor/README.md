@@ -4,6 +4,8 @@
 
 `image_extractor` · `v1` · **🖼️ Image · 📄 PDF** · 2 cr/image
 
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/image)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+
 Image embedding extractor using Google SigLIP (768D). Generates dense vector embeddings for images and PDFs, with text query support in the same contrastive latent space. Optimized for visual similarity search, product matching, and text-to-image search.
 
 **When to use:** Visual similarity search, text→image retrieval, product/image dedup, and PDF-page visual search.
@@ -35,9 +37,9 @@ Image embedding extractor using Google SigLIP (768D). Generates dense vector emb
 | `page_number` | `integer` | — | `—` | Page number for PDF sources (1-indexed) |
 | `total_pages` | `integer` | — | `—` | Total number of pages in the PDF |
 
-## Try it
+## Quickstart
 
-Attach this extractor to a collection, then upload an object and search. The extractor config below is generated from the live schema; see the [API reference](https://docs.mixpeek.com) for the full request envelope.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/image) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -61,4 +63,4 @@ client.collections.create(
 
 <sub>Topics: image embeddings api, siglip, text to image search, visual search, image similarity, clip alternative</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Docs](https://docs.mixpeek.com) · [Get an API key](https://mixpeek.com)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/image) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>

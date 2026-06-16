@@ -4,6 +4,8 @@
 
 `scrolling_text_extractor` · `v1` · **🎬 Video** · 30 cr/minute
 
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/scrolling-text)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+
 Extracts scrolling/marquee text from video using phase-correlation band detection, panoramic stitching, and VLM OCR.
 
 **What it does:**
@@ -50,9 +52,9 @@ Detects text that scrolls across the screen — horizontally (R-to-L / L-to-R ti
 | `scroll_bands` | `array` | — | `—` | Per-band extraction details. Each entry contains: axis (horizontal/vertical), direction (right_to_left, etc.), shift_per_frame (px), and the extracted text for that band. |
 | `bands_detected` | `integer` | — | `—` | Number of scrolling text bands detected in the video. |
 
-## Try it
+## Quickstart
 
-Attach this extractor to a collection, then upload an object and search. The extractor config below is generated from the live schema; see the [API reference](https://docs.mixpeek.com) for the full request envelope.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/scrolling-text) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -76,4 +78,4 @@ client.collections.create(
 
 <sub>Topics: video ocr api, scrolling text detection, marquee ocr, news ticker ocr, vlm ocr</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Docs](https://docs.mixpeek.com) · [Get an API key](https://mixpeek.com)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/scrolling-text) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>

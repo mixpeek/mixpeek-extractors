@@ -4,6 +4,8 @@
 
 `passthrough_extractor` · `v1` · **📝 Text · 🖼️ Image · 🎬 Video · 🔊 Audio · 📄 PDF** · 1 cr/extraction
 
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/passthrough)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+
 Minimal passthrough extractor for simple object storage. No ML processing - just canonicalization and data preservation. Use when you need to store objects without feature extraction.
 
 **When to use:** You want Mixpeek's object/bucket model and metadata filtering without paying for embeddings.
@@ -30,9 +32,9 @@ Minimal passthrough extractor for simple object storage. No ML processing - just
 | `size_bytes` | `integer` | — | `—` | Content size in bytes. |
 | `metadata` | `object` | — | `—` | Preserved metadata from source object. |
 
-## Try it
+## Quickstart
 
-Attach this extractor to a collection, then upload an object and search. The extractor config below is generated from the live schema; see the [API reference](https://docs.mixpeek.com) for the full request envelope.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/passthrough) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -56,4 +58,4 @@ client.collections.create(
 
 <sub>Topics: object storage api, metadata only ingestion, no embedding extractor</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Docs](https://docs.mixpeek.com) · [Get an API key](https://mixpeek.com)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/passthrough) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>

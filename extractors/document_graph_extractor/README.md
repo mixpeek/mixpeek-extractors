@@ -4,6 +4,8 @@
 
 `document_graph_extractor` · `v1` · **📄 PDF** · 5 cr/page, 20 cr/extraction
 
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/document-graph)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+
 Extracts spatial blocks from PDFs with layout classification and confidence scoring. Decomposes documents into paragraphs, tables, forms, lists, headers, footers, figures, and handwritten content. Includes optional VLM correction for low-confidence blocks. Best for archival documents, scanned files, and documents requiring spatial understanding.
 
 **Pipeline Steps:**
@@ -83,9 +85,9 @@ Extracts spatial blocks from PDFs with layout classification and confidence scor
 | `total_pages` | `integer` | — | `—` | Total pages in source PDF |
 | `source_file` | `string` | — | `—` | Original source file name |
 
-## Try it
+## Quickstart
 
-Attach this extractor to a collection, then upload an object and search. The extractor config below is generated from the live schema; see the [API reference](https://docs.mixpeek.com) for the full request envelope.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/document-graph) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -109,4 +111,4 @@ client.collections.create(
 
 <sub>Topics: pdf layout extraction, document understanding api, table extraction, document graph, layout analysis</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Docs](https://docs.mixpeek.com) · [Get an API key](https://mixpeek.com)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/document-graph) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>

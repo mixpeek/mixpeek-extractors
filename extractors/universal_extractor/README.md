@@ -4,6 +4,8 @@
 
 `universal_extractor` · `v1` · **🖼️ Image · 🎬 Video · 🔊 Audio · 📄 PDF · 📝 Text** · 15 cr/image
 
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/universal)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+
 **Universal all-in-one extractor** — handles image, video, audio, and documents in a single extractor using Gemini APIs.
 
 Automatically detects modality and applies the best processing strategy:
@@ -58,9 +60,9 @@ All embeddings use Gemini Embedding 2 (3072-d) in a unified multimodal vector sp
 | `end_time_s` | `number` | — | `—` | Segment end time in seconds (video/audio only). |
 | `duration_s` | `number` | — | `—` | Total file duration in seconds (video/audio only). |
 
-## Try it
+## Quickstart
 
-Attach this extractor to a collection, then upload an object and search. The extractor config below is generated from the live schema; see the [API reference](https://docs.mixpeek.com) for the full request envelope.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/universal) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -84,4 +86,4 @@ client.collections.create(
 
 <sub>Topics: universal extractor, any file embeddings, auto modality detection, gemini multimodal api</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Docs](https://docs.mixpeek.com) · [Get an API key](https://mixpeek.com)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/universal) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>

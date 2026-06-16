@@ -4,6 +4,8 @@
 
 `text_extractor` · `v1` · **📝 Text** · 1 cr/1k_tokens
 
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/text)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+
 Extracts dense vector embeddings from text using E5-Large multilingual model. Optimized for semantic search, RAG applications, and general-purpose text retrieval. Supports text chunking/decomposition with multiple splitting strategies. With source_type='youtube', resolves YouTube URLs to caption text before embedding. Fast (5ms/doc) and supports 100+ languages.
 
 **When to use:** Semantic search, RAG retrieval, clustering, and multilingual text matching.
@@ -53,9 +55,9 @@ Extracts dense vector embeddings from text using E5-Large multilingual model. Op
 | `segment_index` | `integer` | — | `—` | Index of this segment within the video (0-based). |
 | `total_segments` | `integer` | — | `—` | Total number of segments from this video. |
 
-## Try it
+## Quickstart
 
-Attach this extractor to a collection, then upload an object and search. The extractor config below is generated from the live schema; see the [API reference](https://docs.mixpeek.com) for the full request envelope.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/text) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -79,4 +81,4 @@ client.collections.create(
 
 <sub>Topics: text embeddings api, e5 large, semantic search, rag embeddings, multilingual embeddings, vector search</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Docs](https://docs.mixpeek.com) · [Get an API key](https://mixpeek.com)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/text) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>

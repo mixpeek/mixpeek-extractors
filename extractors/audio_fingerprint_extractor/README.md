@@ -4,6 +4,8 @@
 
 `audio_fingerprint_extractor` · `v1` · **🔊 Audio · 🎬 Video** · 3 cr/extraction
 
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/audio-fingerprint)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+
 Audio fingerprinting using CLAP (Contrastive Language-Audio Pretraining).
 
 Extracts 512-dimensional embeddings from audio files or audio tracks extracted from video. Uses laion/clap-htsat-tiny model.
@@ -57,9 +59,9 @@ Extracts 512-dimensional embeddings from audio files or audio tracks extracted f
 | `embedding_model` | `string` | — | `laion/clap-htsat-tiny` | CLAP model used for embedding |
 | `processing_time_ms` | `number` | ✅ | `—` | Processing time for this segment (milliseconds) |
 
-## Try it
+## Quickstart
 
-Attach this extractor to a collection, then upload an object and search. The extractor config below is generated from the live schema; see the [API reference](https://docs.mixpeek.com) for the full request envelope.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/audio-fingerprint) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -83,4 +85,4 @@ client.collections.create(
 
 <sub>Topics: audio fingerprint api, clap embeddings, audio search, sound similarity, content based audio retrieval</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Docs](https://docs.mixpeek.com) · [Get an API key](https://mixpeek.com)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/audio-fingerprint) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>

@@ -4,6 +4,8 @@
 
 `multimodal_extractor` · `v2` · **🎬 Video · 🖼️ Image · 🔊 Audio · 📝 Text** · 50 cr/minute, 5 cr/image, 2 cr/1k_tokens
 
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/multimodal)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+
 **Multimodal extractor v2** using **Gemini Embedding 2** (3072D) for unified embeddings.
 
 Same pipeline as v1 (FFmpeg chunking, Whisper transcription, thumbnails, Gemini vision) but with upgraded embedding model:
@@ -92,9 +94,9 @@ Gemini Embedding 2 is Google's first natively multimodal embedding model, mappin
 | `multimodal_extractor_v2_transcription_embedding` | `array` | — | `—` | Dense vector embeddings (1024D) for transcription text via E5-Large. |
 | `internal_metadata` | `object` | — | `—` | Internal processing metadata |
 
-## Try it
+## Quickstart
 
-Attach this extractor to a collection, then upload an object and search. The extractor config below is generated from the live schema; see the [API reference](https://docs.mixpeek.com) for the full request envelope.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/multimodal) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -118,4 +120,4 @@ client.collections.create(
 
 <sub>Topics: video embeddings api, multimodal embeddings, video scene detection, video search api, whisper transcription, gemini embedding 2</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Docs](https://docs.mixpeek.com) · [Get an API key](https://mixpeek.com)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/multimodal) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>

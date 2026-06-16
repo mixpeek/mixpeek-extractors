@@ -4,6 +4,8 @@
 
 `gemini_multifile_extractor` · `v1` · **🖼️ Image · 🎬 Video · 🔊 Audio · 📄 PDF · 📝 Text** · 10 cr/image
 
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/gemini-multifile)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+
 **Multi-file object embedding using Gemini Embedding 2** (gemini-embedding-2, 3072-d).
 
 Embeds ALL files of an object (images, PDFs, video, audio, text) into a SINGLE unified vector in one Gemini API call. Use when you want object-level search where similarity is based on the combined content of all an object's blobs — not individual file-level search.
@@ -50,9 +52,9 @@ Embeds ALL files of an object (images, PDFs, video, audio, text) into a SINGLE u
 | `source_blob_count` | `integer` | ✅ | `—` | Number of blobs that were embedded together. |
 | `source_blob_properties` | `array` | — | `—` | Blob property names that contributed to this embedding. |
 
-## Try it
+## Quickstart
 
-Attach this extractor to a collection, then upload an object and search. The extractor config below is generated from the live schema; see the [API reference](https://docs.mixpeek.com) for the full request envelope.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/gemini-multifile) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -76,4 +78,4 @@ client.collections.create(
 
 <sub>Topics: multi file embeddings, gemini embedding, object embeddings, document embeddings api</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Docs](https://docs.mixpeek.com) · [Get an API key](https://mixpeek.com)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/gemini-multifile) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>

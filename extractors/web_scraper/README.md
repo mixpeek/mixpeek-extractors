@@ -4,6 +4,8 @@
 
 `web_scraper` · `v1` · **📝 Text** · 5 cr/page, 1 cr/extraction, 2 cr/image
 
+📖 **[Documentation](https://mixpeek.com/docs/processing/extractors/web-scraper)** · ▶️ **[Try in Studio](https://studio.mixpeek.com)** · ⚙️ **[API reference](https://mixpeek.com/docs/api-reference)**
+
 Crawls websites and extracts content with multimodal embeddings. Supports documentation sites, job boards, news sites, and SPAs.
 
 **Embedding Types:**
@@ -94,9 +96,9 @@ Crawls websites and extracts content with multimodal embeddings. Supports docume
 | `crawl_depth` | `integer` | — | `—` | Depth from seed URL (0=seed page). |
 | `parent_url` | `string` | — | `—` | URL of the page that linked to this one. |
 
-## Try it
+## Quickstart
 
-Attach this extractor to a collection, then upload an object and search. The extractor config below is generated from the live schema; see the [API reference](https://docs.mixpeek.com) for the full request envelope.
+**Fastest path:** create a collection with this extractor in [Mixpeek Studio](https://studio.mixpeek.com/namespaces/create), upload an object, and search — no code. Prefer the API? The extractor config below is generated from the live schema; see the [API reference](https://mixpeek.com/docs/api-reference) for the full request envelope, or the [extractor docs](https://mixpeek.com/docs/processing/extractors/web-scraper) for a full walkthrough.
 
 ```bash
 curl -X POST https://api.mixpeek.com/v1/collections \
@@ -120,4 +122,4 @@ client.collections.create(
 
 <sub>Topics: web scraper api, website embeddings, crawl and embed, rag website, documentation search</sub>
 
-<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Docs](https://docs.mixpeek.com) · [Get an API key](https://mixpeek.com)</sub>
+<sub>↩ Back to the [Extractor Catalog](../../README.md) · [Documentation](https://mixpeek.com/docs/processing/extractors/web-scraper) · [Try in Studio](https://studio.mixpeek.com) · [Get an API key](https://studio.mixpeek.com/namespaces/create)</sub>
