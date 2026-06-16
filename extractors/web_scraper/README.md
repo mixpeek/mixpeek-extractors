@@ -118,6 +118,16 @@ client.collections.create(
 )
 ```
 
+## Run it locally
+
+Drive this extractor end-to-end from your machine with [`scripts/run_extractor.py`](../../scripts/run_extractor.py) — it creates a throwaway namespace (auto-expires in 6h), processes one object, and runs a search:
+
+```bash
+export MIXPEEK_API_KEY=sk_...   # https://studio.mixpeek.com
+pip install -r scripts/requirements.txt
+python scripts/run_extractor.py --extractor web_scraper
+```
+
 ---
 
 <sub>Topics: web scraper api, website embeddings, crawl and embed, rag website, documentation search</sub>

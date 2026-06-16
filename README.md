@@ -49,6 +49,21 @@ curl -X POST https://api.mixpeek.com/v1/collections \
 
 Full walkthrough in the [docs](https://docs.mixpeek.com).
 
+## Run an extractor locally
+
+[`scripts/run_extractor.py`](scripts/run_extractor.py) drives any extractor end-to-end from your machine — it creates a throwaway namespace (auto-expires in 6h), uploads one object, processes it through the extractor, then builds a retriever and runs a search. The flow mirrors Mixpeek's own E2E test and the search feature URI is auto-detected, so it stays correct as models change.
+
+```bash
+export MIXPEEK_API_KEY=sk_...   # https://studio.mixpeek.com
+pip install -r scripts/requirements.txt
+
+# text-based extractors run with a built-in sample:
+python scripts/run_extractor.py --extractor text_extractor
+
+# media extractors take a public/s3/gs URL to your asset:
+python scripts/run_extractor.py --extractor image_extractor --input https://example.com/cat.jpg
+```
+
 ## How it fits together
 
 ```
